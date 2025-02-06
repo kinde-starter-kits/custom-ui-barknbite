@@ -29,6 +29,7 @@ const styles: {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    flex: 1,
   },
   heading: {
     fontSize: "32px",

@@ -47,5 +47,7 @@ export const generateCSSVariables = (): string => `
 
   [for=sign_up_sign_in_credentials_p_kp_usr_is_marketing_opt_in] {
     font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 `;
