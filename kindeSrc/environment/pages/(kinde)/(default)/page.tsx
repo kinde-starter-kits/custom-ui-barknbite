@@ -15,6 +15,8 @@ const styles: {
   policies: React.CSSProperties;
   links: React.CSSProperties;
   link: React.CSSProperties;
+  signInButtonWrapper: React.CSSProperties;
+  signInButton: React.CSSProperties;
 } = {
   container: {
     display: "flex",
@@ -64,12 +66,29 @@ const styles: {
     color: "#184027",
     fontWeight: 500,
   },
+  signInButtonWrapper: {
+    position: "absolute",
+    top: "1rem",
+    right: "1rem",
+  },
+  signInButton: {
+    color: "#184027",
+    backgroundColor: "transparent",
+    border: "none",
+    fontSize: "1rem",
+    padding: "0.5rem 1rem",
+    borderRadius: "99px",
+  },
 };
 
 const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
     <Layout context={context} request={request}>
       <div style={styles.container}>
+        <div style={styles.signInButtonWrapper}>
+          <button styles={styles.signInButton}>SIGN IN</button>
+        </div>
+
         <div style={styles.sidePanel}></div>
 
         <main style={styles.loginFormWrapper}>
