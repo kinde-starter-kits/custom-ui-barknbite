@@ -64,7 +64,7 @@ export const generateCSSVariables = (): string => `
 
   .header {
     display: flex;
-    justify-content: between;
+    justify-content: space-between;
     align-items: center;
     padding: 2rem;
   }

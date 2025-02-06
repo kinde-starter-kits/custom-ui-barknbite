@@ -26,6 +26,9 @@ const styles: {
     height: "100vh",
     backgroundColor: "#FEF5ED",
     color: "#184027",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
   },
   loginForm: {
     maxWidth: "400px",
@@ -49,11 +52,8 @@ const styles: {
   policies: {
     textAlign: "center",
     marginTop: "1.5rem",
-    position: "absolute",
-    bottom: "1rem",
-    left: "50%",
-    transform: "translateX(-50%)",
     fontSize: "0.8rem",
+    padding: "2rem",
   },
   links: {
     display: "flex",
@@ -108,19 +108,19 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
 
               {getKindeWidget()}
             </div>
-            <div style={styles.policies}>
-              <p>By continuing, you agree to our policies</p>
-              <div style={styles.links}>
-                <a style={styles.link} href="#">
-                  Privacy Policy
-                </a>
-                ·
-                <a style={styles.link} href="#">
-                  Terms of Service
-                </a>
-              </div>
-            </div>
           </main>
+        </div>
+        <div style={styles.policies}>
+          <p>By continuing, you agree to our policies</p>
+          <div style={styles.links}>
+            <a style={styles.link} href="#">
+              Privacy Policy
+            </a>
+            ·
+            <a style={styles.link} href="#">
+              Terms of Service
+            </a>
+          </div>
         </div>
       </div>
     </Layout>
