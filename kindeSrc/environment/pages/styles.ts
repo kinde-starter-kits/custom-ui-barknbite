@@ -40,4 +40,9 @@ export const generateCSSVariables = (): string => `
     width: 3rem;
     height: 3rem;
   }
+
+  [data-kinde-control-label] {
+    font-weight: 400;
+    font-size: 1rem;
+  }
 `;

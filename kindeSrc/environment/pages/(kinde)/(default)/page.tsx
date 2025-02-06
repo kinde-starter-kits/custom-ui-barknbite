@@ -15,10 +15,9 @@ const styles: {
   container: {
     display: "flex",
     height: "100vh",
+    backgroundColor: "#FEF5ED",
   },
   sidePanel: {
-    borderRadius: "1rem",
-    backgroundColor: "dodgerblue",
     flex: 1,
     margin: "0.5rem",
     maxWidth: "1024px",
@@ -32,11 +31,8 @@ const styles: {
     justifyContent: "center",
   },
   heading: {
-    fontWeight: "600",
-    fontSize: "2rem",
-  },
-  description: {
-    marginBottom: "1.5rem",
+    fontSize: "32px",
+    letterSpacing: "-0.02em",
   },
 };
 
@@ -44,16 +40,15 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
     <Layout context={context} request={request}>
       <div style={styles.container}>
+        <div style={styles.sidePanel}></div>
+
         <main style={styles.loginForm}>
           <div style={{ padding: "2rem" }}>
             <h2 style={styles.heading}>{context.widget.content.heading}</h2>
-            <p style={styles.description}>
-              {context.widget.content.description}
-            </p>
+
             {getKindeWidget()}
           </div>
         </main>
-        <div style={styles.sidePanel}></div>
       </div>
     </Layout>
   );
