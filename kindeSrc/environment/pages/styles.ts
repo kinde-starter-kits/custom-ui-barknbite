@@ -35,7 +35,6 @@ export const generateCSSVariables = (): string => `
   }
 
 
-
   [data-kinde-control-label] {
     font-weight: 400;
     font-size: 1rem;
@@ -59,9 +58,18 @@ export const generateCSSVariables = (): string => `
     display: none;
   }
 
-  @media only screen and (min-width: 600px) {
+  .sidepanel {
+    display: none;
+  }
+
+  @media only screen and (min-width: 1024px) {
     .sidepanel {
-      display: none;
-    }
+      flex: 1;
+      margin: 0.5rem;
+      max-width: 1024px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
   }
 `;
