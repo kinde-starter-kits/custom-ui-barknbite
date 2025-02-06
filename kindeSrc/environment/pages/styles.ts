@@ -6,12 +6,14 @@ const kindeVariables = {
   buttonPrimaryColor: "#184027",
   buttonPrimaryBorderWidth: "2px",
   buttonPrimaryBorderColor: "#184027",
-  buttonBorderRadius: "99px",
-  buttonSecondaryBackgroundColor: "#fff",
-  buttonSecondaryBorderWidth: "1px",
-  buttonSecondaryBorderColor: "#e9edec",
+
+  buttonSecondaryBackgroundColor: "transparent",
+  buttonSecondaryColor: "#184027",
+  buttonSecondaryBorderWidth: "2px",
+  buttonSecondaryBorderColor: "#184027",
   buttonSecondaryBorderStyle: "solid",
-  buttonSecondaryBorderRadius: "99px",
+
+  buttonBorderRadius: "99px",
 } as const;
 
 export const generateCSSVariables = (): string => `
@@ -27,7 +29,6 @@ export const generateCSSVariables = (): string => `
     --kinde-button-secondary-border-width: ${kindeVariables.buttonSecondaryBorderWidth};
     --kinde-button-secondary-border-color: ${kindeVariables.buttonSecondaryBorderColor};
     --kinde-button-secondary-border-style: ${kindeVariables.buttonSecondaryBorderStyle};
-    --kinde-button-secondary-border-radius: ${kindeVariables.buttonSecondaryBorderRadius};
   }
 
   [data-kinde-choice-separator] {
