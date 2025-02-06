@@ -94,7 +94,7 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
     <Layout context={context} request={request}>
       <div style={styles.container}>
         <div style={styles.signInButtonWrapper}>
-          <a href={getKindeLoginUrl()} styles={styles.signInButton}>
+          <a href={getKindeLoginUrl()} style={styles.signInButton}>
             SIGN IN
           </a>
         </div>
