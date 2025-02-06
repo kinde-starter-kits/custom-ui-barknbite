@@ -70,7 +70,7 @@ export const generateCSSVariables = (): string => `
   }
 
   .logo {
-    width: 150px;
+    display: none;
   }
 
   @media only screen and (min-width: 1024px) {
@@ -81,6 +81,10 @@ export const generateCSSVariables = (): string => `
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .logo {
+      width: 150px;
     }
   }
 `;
