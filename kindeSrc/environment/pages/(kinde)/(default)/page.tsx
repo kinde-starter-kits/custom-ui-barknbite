@@ -32,6 +32,7 @@ const styles: {
   },
   heading: {
     fontSize: "32px",
+    fontWeight: 400,
     letterSpacing: "-0.02em",
   },
 };

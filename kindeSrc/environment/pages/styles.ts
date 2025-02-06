@@ -45,4 +45,9 @@ export const generateCSSVariables = (): string => `
     font-weight: 400;
     font-size: 1rem;
   }
+
+  [data-kinde-control-select-text] {
+    border: none;
+    border-bottom: 1px solid #184027;
+  }
 `;
