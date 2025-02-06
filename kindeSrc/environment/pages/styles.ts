@@ -46,9 +46,12 @@ export const generateCSSVariables = (): string => `
   }
 
   [data-kinde-control-checkable-container] {
-    font-weight: 500;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+
+  [for=sign_up_sign_in_credentials_p_kp_usr_is_marketing_opt_in] {
+    font-weight: 500;
   }
 
   [data-kinde-fallback-action] {
