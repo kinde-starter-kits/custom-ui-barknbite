@@ -29,6 +29,9 @@ export const generateCSSVariables = (): string => `
     --kinde-button-secondary-border-width: ${kindeVariables.buttonSecondaryBorderWidth};
     --kinde-button-secondary-border-color: ${kindeVariables.buttonSecondaryBorderColor};
     --kinde-button-secondary-border-style: ${kindeVariables.buttonSecondaryBorderStyle};
+    --kinde-control-checkable-border-color: #184027;
+    --kinde-control-checkable-border-radius: 0px;
+    --kinde-control-checkable-border-width: 2px;
   }
 
 
@@ -40,5 +43,9 @@ export const generateCSSVariables = (): string => `
   [data-kinde-control-select-text] {
     border: none;
     border-bottom: 1px solid #184027;
+  }
+
+  [data-kinde-control-label-is-inline][for="sign_up_sign_in_credentials_p_kp_usr_is_marketing_opt_in"] {
+    font-weight: 500;
   }
 `;
