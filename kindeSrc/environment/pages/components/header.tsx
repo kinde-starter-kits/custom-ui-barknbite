@@ -37,6 +37,7 @@ export const Header = (props: {
         @media only screen and (min-width: 1024px) {
           .logo {
             width: 150px;
+            display: block;
           }
         }
       `}
