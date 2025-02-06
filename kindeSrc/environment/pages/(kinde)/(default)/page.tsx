@@ -68,13 +68,14 @@ const styles: {
   },
   signInButtonWrapper: {
     position: "absolute",
-    top: "1rem",
-    right: "1rem",
+    top: "2rem",
+    right: "2rem",
   },
   signInButton: {
     color: "#184027",
     backgroundColor: "transparent",
     border: "none",
+    fontWeight: 500,
     fontSize: "1rem",
     padding: "0.5rem 1rem",
     borderRadius: "99px",
