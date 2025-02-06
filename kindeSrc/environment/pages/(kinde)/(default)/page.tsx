@@ -1,6 +1,7 @@
 "use server";
 
 import {
+  getDarkModeLogoUrl,
   getKindeLoginUrl,
   getKindeWidget,
   getLogoUrl,
@@ -65,11 +66,6 @@ const styles: {
     color: "#184027",
     fontWeight: 500,
   },
-  signInButtonWrapper: {
-    position: "absolute",
-    top: "2rem",
-    right: "2rem",
-  },
   signInButton: {
     color: "#184027",
     fontWeight: 500,
@@ -85,7 +81,12 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
     <Layout context={context} request={request}>
       <div style={styles.container}>
-        <div style={styles.signInButtonWrapper}>
+        <div className="header">
+          <img
+            className="logo"
+            src={getDarkModeLogoUrl()}
+            alt={context.widget.content.logo_alt}
+          />
           <a href={getKindeLoginUrl()} style={styles.signInButton}>
             SIGN IN
           </a>

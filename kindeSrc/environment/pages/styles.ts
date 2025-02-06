@@ -62,6 +62,17 @@ export const generateCSSVariables = (): string => `
     display: none;
   }
 
+  .header {
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
   @media only screen and (min-width: 1024px) {
     .sidepanel {
       flex: 1;
@@ -70,6 +81,6 @@ export const generateCSSVariables = (): string => `
       display: flex;
       justify-content: center;
       align-items: center;
-      }
+    }
   }
 `;
