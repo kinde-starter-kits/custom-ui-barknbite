@@ -51,7 +51,7 @@ export const generateCSSVariables = (): string => `
     margin-bottom: 1.5rem;
   }
 
-  [data-kinde-fallback-action-helper-text] {
+  [data-kinde-fallback-action {
     display: none;
   }
 `;
