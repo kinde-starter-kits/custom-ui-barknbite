@@ -1,6 +1,11 @@
 "use server";
 
-import { getKindeWidget, type KindePageEvent } from "@kinde/infrastructure";
+import {
+  getKindeLoginUrl,
+  getKindeWidget,
+  getLogoUrl,
+  type KindePageEvent,
+} from "@kinde/infrastructure";
 import React from "react";
 import { renderToString } from "react-dom/server.browser";
 import Layout from "../../layout";
@@ -87,10 +92,14 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
     <Layout context={context} request={request}>
       <div style={styles.container}>
         <div style={styles.signInButtonWrapper}>
-          <button styles={styles.signInButton}>SIGN IN</button>
+          <a href={getKindeLoginUrl()} styles={styles.signInButton}>
+            SIGN IN
+          </a>
         </div>
 
-        <div style={styles.sidePanel}></div>
+        <div style={styles.sidePanel}>
+          <img src={getLogoUrl()} alt={context.widget.content.logo_alt} />
+        </div>
 
         <main style={styles.loginFormWrapper}>
           <div style={styles.loginForm}>
