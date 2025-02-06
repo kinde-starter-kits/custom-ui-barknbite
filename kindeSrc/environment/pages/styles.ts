@@ -2,9 +2,10 @@
 const kindeVariables = {
   baseFontFamily:
     "-apple-system, system-ui, BlinkMacSystemFont, Helvetica, Arial, Segoe UI, Roboto, sans-serif",
-  controlSelectTextBorderRadius: "99px",
-  buttonPrimaryBackgroundColor: "dodgerblue",
-  buttonPrimaryColor: "#fff",
+  buttonPrimaryBackgroundColor: "transparent",
+  buttonPrimaryColor: "#184027",
+  buttonPrimaryBorderWidth: "2px",
+  buttonPrimaryBorderColor: "#184027",
   buttonBorderRadius: "99px",
   buttonSecondaryBackgroundColor: "#fff",
   buttonSecondaryBorderWidth: "1px",
@@ -16,10 +17,12 @@ const kindeVariables = {
 export const generateCSSVariables = (): string => `
   :root {
     --kinde-base-font-family: ${kindeVariables.baseFontFamily};
-    --kinde-control-select-text-border-radius: ${kindeVariables.controlSelectTextBorderRadius};
     --kinde-button-primary-background-color: ${kindeVariables.buttonPrimaryBackgroundColor};
     --kinde-button-primary-color: ${kindeVariables.buttonPrimaryColor};
     --kinde-button-border-radius: ${kindeVariables.buttonBorderRadius};
+    --kinde-button-primary-border-width: ${kindeVariables.buttonPrimaryBorderWidth};
+    --kinde-button-primary-border-color: ${kindeVariables.buttonPrimaryBorderColor};
+
     --kinde-button-secondary-background-color: ${kindeVariables.buttonSecondaryBackgroundColor};
     --kinde-button-secondary-border-width: ${kindeVariables.buttonSecondaryBorderWidth};
     --kinde-button-secondary-border-color: ${kindeVariables.buttonSecondaryBorderColor};
