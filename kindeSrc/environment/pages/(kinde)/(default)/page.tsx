@@ -86,6 +86,7 @@ const styles: {
     padding: "0.5rem 1rem",
     borderRadius: "99px",
     cursor: "pointer",
+    textDecoration: "none",
   },
 };
 
