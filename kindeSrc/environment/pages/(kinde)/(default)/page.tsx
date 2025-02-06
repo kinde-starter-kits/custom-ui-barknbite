@@ -24,7 +24,7 @@ const styles: {
     maxWidth: "1024px",
   },
   loginForm: {
-    minWidth: "400px",
+    width: "400px",
     margin: "0 auto",
     minInlineSize: "2rem",
   },
