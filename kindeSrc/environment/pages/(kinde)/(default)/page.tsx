@@ -19,6 +19,7 @@ const styles: {
     display: "flex",
     height: "100vh",
     backgroundColor: "#FEF5ED",
+    color: "#184027",
   },
   sidePanel: {
     flex: 1,
@@ -50,13 +51,15 @@ const styles: {
     bottom: "1rem",
     left: "50%",
     transform: "translateX(-50%)",
+    fontSize: "0.8rem",
   },
   links: {
     display: "flex",
     justifyContent: "center",
-    marginTop: "1rem",
+    marginTop: "0.5rem",
     gap: "0.5rem",
-    fontSize: "0.8rem",
+    color: "#184027",
+    fontWeight: 500,
   },
 };
 
