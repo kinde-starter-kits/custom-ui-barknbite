@@ -10,6 +10,7 @@ import {
 import React from "react";
 import { renderToString } from "react-dom/server.browser";
 import Layout from "../../layout";
+import { Header } from "../../components/header";
 
 const styles: {
   container: React.CSSProperties;
@@ -78,18 +79,8 @@ const styles: {
 const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
     <Layout context={context} request={request}>
-      LOGIN is here!
       <div style={styles.container}>
-        <div className="header">
-          <img
-            className="logo"
-            src={getDarkModeLogoUrl()}
-            alt={context.widget.content.logo_alt}
-          />
-          <a href={getKindeLoginUrl()} style={styles.signInButton}>
-            SIGN IN
-          </a>
-        </div>
+        <Header logoAlt={context.widget.content.logo_alt} page={"login"} />\
         <div
           style={{
             display: "flex",
