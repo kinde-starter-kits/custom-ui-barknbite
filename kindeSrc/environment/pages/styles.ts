@@ -45,7 +45,7 @@ export const generateCSSVariables = (): string => `
     border-bottom: 1px solid #184027;
   }
 
-  [for=sign_up_sign_in_credentials_p_kp_usr_is_marketing_opt_in] {
+  [data-kinde-control-checkable-container] {
     font-weight: 500;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;

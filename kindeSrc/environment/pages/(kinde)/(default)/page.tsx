@@ -12,6 +12,8 @@ const styles: {
   loginFormWrapper: React.CSSProperties;
   heading: React.CSSProperties;
   description: React.CSSProperties;
+  policies: React.CSSProperties;
+  links: React.CSSProperties;
 } = {
   container: {
     display: "flex",
@@ -41,6 +43,21 @@ const styles: {
     letterSpacing: "-0.02em",
     marginBottom: "1.5rem",
   },
+  policies: {
+    textAlign: "center",
+    marginTop: "1.5rem",
+    position: "absolute",
+    bottom: "1rem",
+    left: "50%",
+    transform: "translateX(-50%)",
+  },
+  links: {
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "1rem",
+    gap: "0.5rem",
+    fontSize: "0.8rem",
+  },
 };
 
 const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
@@ -54,6 +71,12 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
             <h2 style={styles.heading}>{context.widget.content.heading}</h2>
 
             {getKindeWidget()}
+          </div>
+          <div style={styles.policies}>
+            <p>By continuing, you agree to our policies</p>
+            <div style={styles.links}>
+              <a href="#">Privacy Policy</a>·<a href="#">Terms of Service</a>
+            </div>
           </div>
         </main>
       </div>
