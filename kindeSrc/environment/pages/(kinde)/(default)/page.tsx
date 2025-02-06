@@ -100,7 +100,7 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
           </a>
         </div>
 
-        <div style={styles.sidePanel}>
+        <div style={styles.sidePanel} className="sidepanel">
           <img src={getLogoUrl()} alt={context.widget.content.logo_alt} />
         </div>
 

@@ -35,6 +35,7 @@ export const generateCSSVariables = (): string => `
   }
 
 
+
   [data-kinde-control-label] {
     font-weight: 400;
     font-size: 1rem;
@@ -56,5 +57,11 @@ export const generateCSSVariables = (): string => `
 
   [data-kinde-fallback-action] {
     display: none;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .sidepanel {
+      display: none;
+    }
   }
 `;
