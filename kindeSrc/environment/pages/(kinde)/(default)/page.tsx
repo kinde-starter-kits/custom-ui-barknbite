@@ -27,9 +27,9 @@ const styles: {
     backgroundColor: "#FEF5ED",
     color: "#184027",
   },
-
   loginForm: {
-    width: "400px",
+    maxWidth: "400px",
+    width: "100%",
     margin: "0 auto",
     minInlineSize: "2rem",
   },
