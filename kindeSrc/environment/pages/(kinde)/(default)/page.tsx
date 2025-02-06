@@ -9,6 +9,7 @@ const styles: {
   container: React.CSSProperties;
   sidePanel: React.CSSProperties;
   loginForm: React.CSSProperties;
+  loginFormWrapper: React.CSSProperties;
   heading: React.CSSProperties;
   description: React.CSSProperties;
 } = {
@@ -26,7 +27,10 @@ const styles: {
     minWidth: "400px",
     margin: "0 auto",
     minInlineSize: "2rem",
+  },
+  loginFormWrapper: {
     display: "flex",
+    padding: "2rem",
     flexDirection: "column",
     justifyContent: "center",
     flex: 1,
@@ -45,8 +49,8 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
       <div style={styles.container}>
         <div style={styles.sidePanel}></div>
 
-        <main style={styles.loginForm}>
-          <div style={{ padding: "2rem" }}>
+        <main style={styles.loginFormWrapper}>
+          <div style={styles.loginForm}>
             <h2 style={styles.heading}>{context.widget.content.heading}</h2>
 
             {getKindeWidget()}
