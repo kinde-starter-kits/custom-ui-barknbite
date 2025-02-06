@@ -12,11 +12,9 @@ import Layout from "../../layout";
 
 const styles: {
   container: React.CSSProperties;
-  sidePanel: React.CSSProperties;
   loginForm: React.CSSProperties;
   loginFormWrapper: React.CSSProperties;
   heading: React.CSSProperties;
-  description: React.CSSProperties;
   policies: React.CSSProperties;
   links: React.CSSProperties;
   link: React.CSSProperties;
@@ -29,14 +27,7 @@ const styles: {
     backgroundColor: "#FEF5ED",
     color: "#184027",
   },
-  sidePanel: {
-    flex: 1,
-    margin: "0.5rem",
-    maxWidth: "1024px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
+
   loginForm: {
     width: "400px",
     margin: "0 auto",
@@ -100,7 +91,7 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
           </a>
         </div>
 
-        <div style={styles.sidePanel} className="sidepanel">
+        <div className="sidepanel">
           <img src={getLogoUrl()} alt={context.widget.content.logo_alt} />
         </div>
 
