@@ -31,19 +31,6 @@ export const generateCSSVariables = (): string => `
     --kinde-button-secondary-border-style: ${kindeVariables.buttonSecondaryBorderStyle};
   }
 
-  [data-kinde-choice-separator] {
-    text-transform: uppercase;
-  }
-
-  [data-kinde-layout-auth-buttons] { 
-    display: flex;
-    justify-content: center;
-  }
-
-  [data-kinde-layout-auth-buttons-item] {
-    width: 3rem;
-    height: 3rem;
-  }
 
   [data-kinde-control-label] {
     font-weight: 400;
