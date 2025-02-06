@@ -14,6 +14,7 @@ const styles: {
   description: React.CSSProperties;
   policies: React.CSSProperties;
   links: React.CSSProperties;
+  link: React.CSSProperties;
 } = {
   container: {
     display: "flex",
@@ -58,9 +59,12 @@ const styles: {
     justifyContent: "center",
     marginTop: "0.5rem",
     gap: "0.5rem",
+    
+  },
+  link {
     color: "#184027",
     fontWeight: 500,
-  },
+  }
 };
 
 const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
@@ -78,7 +82,7 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
           <div style={styles.policies}>
             <p>By continuing, you agree to our policies</p>
             <div style={styles.links}>
-              <a href="#">Privacy Policy</a>·<a href="#">Terms of Service</a>
+              <a style={styles.link} href="#">Privacy Policy</a>·<a style={styles.link} href="#">Terms of Service</a>
             </div>
           </div>
         </main>
