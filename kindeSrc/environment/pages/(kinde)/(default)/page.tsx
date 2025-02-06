@@ -33,6 +33,9 @@ const styles: {
     flex: 1,
     margin: "0.5rem",
     maxWidth: "1024px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
   loginForm: {
     width: "400px",
