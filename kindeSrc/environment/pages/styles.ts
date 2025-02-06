@@ -45,7 +45,7 @@ export const generateCSSVariables = (): string => `
     border-bottom: 1px solid #184027;
   }
 
-  [data-kinde-control-label-is-inline][for="sign_up_sign_in_credentials_p_kp_usr_is_marketing_opt_in"] {
+  [for="sign_up_sign_in_credentials_p_kp_usr_is_marketing_opt_in"] {
     font-weight: 500;
   }
 `;
