@@ -23,7 +23,6 @@ const styles: {
   signInButton: React.CSSProperties;
 } = {
   container: {
-    display: "flex",
     height: "100vh",
     backgroundColor: "#FEF5ED",
     color: "#184027",
@@ -91,30 +90,38 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
             SIGN IN
           </a>
         </div>
-
-        <div className="sidepanel">
-          <img src={getLogoUrl()} alt={context.widget.content.logo_alt} />
-        </div>
-
-        <main style={styles.loginFormWrapper}>
-          <div style={styles.loginForm}>
-            <h2 style={styles.heading}>{context.widget.content.heading}</h2>
-
-            {getKindeWidget()}
+        <div
+          style={{
+            display: "flex",
+            flex: 1,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <div className="sidepanel">
+            <img src={getLogoUrl()} alt={context.widget.content.logo_alt} />
           </div>
-          <div style={styles.policies}>
-            <p>By continuing, you agree to our policies</p>
-            <div style={styles.links}>
-              <a style={styles.link} href="#">
-                Privacy Policy
-              </a>
-              ·
-              <a style={styles.link} href="#">
-                Terms of Service
-              </a>
+
+          <main style={styles.loginFormWrapper}>
+            <div style={styles.loginForm}>
+              <h2 style={styles.heading}>{context.widget.content.heading}</h2>
+
+              {getKindeWidget()}
             </div>
-          </div>
-        </main>
+            <div style={styles.policies}>
+              <p>By continuing, you agree to our policies</p>
+              <div style={styles.links}>
+                <a style={styles.link} href="#">
+                  Privacy Policy
+                </a>
+                ·
+                <a style={styles.link} href="#">
+                  Terms of Service
+                </a>
+              </div>
+            </div>
+          </main>
+        </div>
       </div>
     </Layout>
   );
