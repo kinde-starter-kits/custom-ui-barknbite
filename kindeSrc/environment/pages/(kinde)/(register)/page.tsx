@@ -23,7 +23,7 @@ const styles: {
   signInButton: React.CSSProperties;
 } = {
   container: {
-    height: "100vh",
+    minHeight: "100vh",
     backgroundColor: "#FEF5ED",
     color: "#184027",
     display: "flex",
