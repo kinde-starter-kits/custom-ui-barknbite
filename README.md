@@ -1,8 +1,10 @@
-# 🎨 Bark & Bite - Kinde Custom UI Starter Template
+# 🐾 Bark & Bite - Kinde Custom UI Starter Template
 
 A fully customizable UI starter template built with React Server Components and Kinde's Custom UI feature. Design your auth flows with complete control over the UI.
 
 ## Preview
+
+View [live demo](https://barknbite.kindedemo.com/auth/cx/_:nav&m:register&psid:0194dd77a537034284e1e6d54a3f5777)
 
 ![Bark & Bite](image.png)
 
