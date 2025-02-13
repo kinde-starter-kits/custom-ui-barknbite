@@ -19,7 +19,6 @@ const styles: {
   policies: React.CSSProperties;
   links: React.CSSProperties;
   link: React.CSSProperties;
-  signInButtonWrapper: React.CSSProperties;
   signInButton: React.CSSProperties;
 } = {
   container: {

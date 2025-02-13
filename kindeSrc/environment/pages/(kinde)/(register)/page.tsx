@@ -1,16 +1,14 @@
 "use server";
 
 import {
-  getDarkModeLogoUrl,
-  getKindeLoginUrl,
   getKindeWidget,
   getLogoUrl,
   type KindePageEvent,
 } from "@kinde/infrastructure";
 import React from "react";
 import { renderToString } from "react-dom/server.browser";
-import Layout from "../../layout";
 import { Header } from "../../components/header";
+import Layout from "../../layout";
 
 const styles: {
   container: React.CSSProperties;
