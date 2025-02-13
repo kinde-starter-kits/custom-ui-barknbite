@@ -95,7 +95,7 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
 
           <main style={styles.loginFormWrapper}>
             <div style={styles.loginForm}>
-              <h2 style={styles.heading}>{context.widget.content.heading}</h2>
+              <h1 style={styles.heading}>{context.widget.content.heading}</h1>
 
               {getKindeWidget()}
             </div>
