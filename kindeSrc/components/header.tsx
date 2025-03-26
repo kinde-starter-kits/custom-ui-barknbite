@@ -5,10 +5,7 @@ import {
 } from "@kinde/infrastructure";
 import React from "react";
 
-export const Header = (props: {
-  logoAlt: string;
-  page: "login" | "register";
-}) => {
+export const Header = (props: { page: "login" | "register" }) => {
   return (
     <>
       <style>
@@ -44,11 +41,7 @@ export const Header = (props: {
       </style>
       <div className="header">
         <div>
-          <img
-            className="logo"
-            src={getDarkModeLogoUrl()}
-            alt={props.logoAlt}
-          />
+          <img className="logo" src={getDarkModeLogoUrl()} alt={"logo"} />
         </div>
         {props.page === "login" ? (
           <a href={getKindeRegisterUrl()} className="action-button">
