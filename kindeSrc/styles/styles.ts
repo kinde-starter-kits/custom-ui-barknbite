@@ -33,6 +33,7 @@ export const getStyles = (): string => `
     --kinde-control-checkable-border-radius: 0px;
     --kinde-control-checkable-border-width: 2px;
     --kinde-control-label-font-weight: 400;
+
     --kinde-designer-control-select-text-border-radius: 0px;
 
     --kinde-form-spacing-content: 1.5rem;
