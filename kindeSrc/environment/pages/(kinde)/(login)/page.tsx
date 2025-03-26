@@ -1,7 +1,5 @@
 "use server";
 
-import { DefaultLayout } from "@/kindeSrc/layouts/default";
-import { Root } from "@/kindeSrc/root";
 import {
   getKindeWidget,
   getLogoUrl,
@@ -9,6 +7,8 @@ import {
 } from "@kinde/infrastructure";
 import React from "react";
 import { renderToString } from "react-dom/server.browser";
+import { DefaultLayout } from "../../../../layouts/default";
+import { Root } from "../../../../root";
 
 const styles: {
   container: React.CSSProperties;
