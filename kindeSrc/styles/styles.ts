@@ -32,11 +32,12 @@ export const getStyles = (): string => `
     --kinde-control-checkable-border-color: #184027;
     --kinde-control-checkable-border-radius: 0px;
     --kinde-control-checkable-border-width: 2px;
+    --kinde-control-label-font-weight: 400;
+    
   }
 
 
   [data-kinde-control-label] {
-    font-weight: 400;
     font-size: 1rem;
   }
 
