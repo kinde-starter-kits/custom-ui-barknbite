@@ -1,5 +1,7 @@
 "use server";
 
+import { DefaultLayout } from "@/kindeSrc/layouts/default";
+import { Root } from "@/kindeSrc/root";
 import {
   getKindeWidget,
   getLogoUrl,
@@ -7,8 +9,6 @@ import {
 } from "@kinde/infrastructure";
 import React from "react";
 import { renderToString } from "react-dom/server.browser";
-import { Header } from "../../components/header";
-import Layout from "../../layout";
 
 const styles: {
   container: React.CSSProperties;
@@ -76,9 +76,8 @@ const styles: {
 
 const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
-    <Layout context={context} request={request}>
-      <div style={styles.container}>
-        <Header logoAlt={context.widget.content.logo_alt} page={"login"} />\
+    <Root context={context} request={request}>
+      <DefaultLayout>
         <div
           style={{
             display: "flex",
@@ -99,20 +98,8 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
             </div>
           </main>
         </div>
-        <div style={styles.policies}>
-          <p>By continuing, you agree to our policies</p>
-          <div style={styles.links}>
-            <a style={styles.link} href="#">
-              Privacy Policy
-            </a>
-            ·
-            <a style={styles.link} href="#">
-              Terms of Service
-            </a>
-          </div>
-        </div>
-      </div>
-    </Layout>
+      </DefaultLayout>
+    </Root>
   );
 };
 
