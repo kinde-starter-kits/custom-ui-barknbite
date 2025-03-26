@@ -33,7 +33,9 @@ export const getStyles = (): string => `
     --kinde-control-checkable-border-radius: 0px;
     --kinde-control-checkable-border-width: 2px;
     --kinde-control-label-font-weight: 400;
-    
+    --kinde-designer-control-select-text-border-radius: 0px;
+
+    --kinde-form-spacing-content: 1.5rem;
   }
 
 
@@ -46,15 +48,11 @@ export const getStyles = (): string => `
     border-bottom: 1px solid #184027;
   }
 
-  [data-kinde-control-checkable-container] {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
 
-  [for=sign_up_sign_in_credentials_p_kp_usr_is_marketing_opt_in] {
+  [data-kinde-control-checkable-container] [data-kinde-control-label] {
     font-weight: 500;
   }
-
+    
   [data-kinde-fallback-action] {
     display: none;
   }
