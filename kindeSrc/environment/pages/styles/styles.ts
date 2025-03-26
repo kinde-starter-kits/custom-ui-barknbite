@@ -16,7 +16,7 @@ const kindeVariables = {
   buttonBorderRadius: "99px",
 } as const;
 
-export const generateCSSVariables = (): string => `
+export const getStyles = (): string => `
   :root {
     --kinde-base-font-family: ${kindeVariables.baseFontFamily};
     --kinde-button-primary-background-color: ${kindeVariables.buttonPrimaryBackgroundColor};
